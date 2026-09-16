@@ -1,0 +1,784 @@
+/* ==========================================
+   VARIÁVEIS
+========================================== */
+
+:root {
+    --color-ocean: #0C447C;
+    --color-ocean-light: #185FA5;
+    --color-sand: #F5E9D6;
+    --color-coral: #D85A30;
+    --color-palm: #0F6E56;
+
+    --color-text: #2C2C2A;
+    --color-text-muted: #5F5E5A;
+
+    --color-border: #E6E6E6;
+    --color-table-header: #EEF3F8;
+}
+
+
+/* ==========================================
+   GERAL
+========================================== */
+
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    font-family: system-ui, -apple-system, "Segoe UI", sans-serif;
+    color: var(--color-text);
+    line-height: 1.5;
+    background: #FFFFFF;
+}
+
+
+/* ==========================================
+   NAVEGAÇÃO
+========================================== */
+
+.nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+    padding: 14px 24px;
+
+    border-bottom: 1px solid #EEEEEE;
+
+    flex-wrap: wrap;
+    gap: 12px;
+}
+
+.nav-title {
+    font-size: 15px;
+    font-weight: 600;
+}
+
+.nav-links {
+    display: flex;
+    align-items: center;
+    gap: 20px;
+    flex-wrap: wrap;
+}
+
+.nav-links a {
+    padding: 6px 0;
+
+    color: var(--color-text-muted);
+
+    text-decoration: none;
+    font-size: 14px;
+
+    transition: color 0.2s ease;
+}
+
+.nav-links a:hover {
+    color: var(--color-ocean);
+}
+
+
+/* ==========================================
+   HERO
+========================================== */
+
+.hero {
+    position: relative;
+    overflow: hidden;
+
+    background: var(--color-ocean);
+    color: #FFFFFF;
+
+    padding: 40px 24px 70px;
+}
+
+.hero-kicker {
+    margin-bottom: 6px;
+
+    color: #B5D4F4;
+
+    font-size: 12px;
+    letter-spacing: 1px;
+}
+
+.hero h1 {
+    margin-bottom: 8px;
+
+    font-size: 28px;
+}
+
+.hero-subtitle {
+    margin-bottom: 20px;
+
+    color: #B5D4F4;
+
+    font-size: 15px;
+}
+
+
+/* ==========================================
+   BOTÃO
+========================================== */
+
+.btn-primary {
+    display: inline-block;
+
+    padding: 10px 20px;
+
+    background: var(--color-coral);
+    color: #FFFFFF;
+
+    border-radius: 6px;
+
+    text-decoration: none;
+    font-size: 14px;
+    font-weight: 600;
+
+    transition:
+        transform 0.2s ease,
+        opacity 0.2s ease;
+}
+
+.btn-primary:hover {
+    transform: translateY(-1px);
+    opacity: 0.95;
+}
+
+
+/* ==========================================
+   ONDA
+========================================== */
+
+.hero .wave {
+    position: absolute;
+
+    bottom: 0;
+    left: -20%;
+
+    width: 140%;
+    height: 60px;
+
+    display: block;
+}
+
+
+/* ==========================================
+   RESUMO
+========================================== */
+
+.resumo {
+    padding: 20px 24px 32px;
+
+    background: var(--color-sand);
+}
+
+.resumo-label {
+    margin-bottom: 12px;
+
+    color: var(--color-text-muted);
+
+    font-size: 13px;
+}
+
+.resumo-grid {
+    display: grid;
+
+    grid-template-columns:
+        repeat(auto-fit, minmax(130px, 1fr));
+
+    gap: 12px;
+}
+
+.resumo-card {
+    padding: 14px;
+
+    background: #FFFFFF;
+
+    border-radius: 8px;
+}
+
+.resumo-card .fuel-name {
+    color: var(--color-text-muted);
+
+    font-size: 12px;
+    font-weight: 500;
+}
+
+.resumo-card .fuel-price {
+    margin-top: 2px;
+
+    font-size: 20px;
+    font-weight: 600;
+}
+
+
+/* ==========================================
+   CONSULTAS
+========================================== */
+
+.consultas {
+    display: grid;
+
+    gap: 32px;
+
+    padding: 32px 24px;
+}
+
+
+/* ==========================================
+   CARDS
+========================================== */
+
+.consulta-card {
+    padding: 24px;
+
+    background: #FFFFFF;
+
+    border: 1px solid var(--color-border);
+    border-radius: 12px;
+}
+
+.consulta-titulo {
+    margin-bottom: 22px;
+}
+
+.consulta-titulo h2 {
+    margin-bottom: 4px;
+
+    color: var(--color-ocean);
+
+    font-size: 18px;
+}
+
+.consulta-titulo p {
+    color: var(--color-text-muted);
+
+    font-size: 14px;
+}
+
+
+/* ==========================================
+   FILTROS
+========================================== */
+
+.filtro {
+    display: flex;
+    align-items: center;
+
+    gap: 12px;
+
+    margin-bottom: 20px;
+}
+
+.filtro label {
+    font-size: 14px;
+    font-weight: 600;
+}
+
+.filtro select {
+    padding: 10px 36px 10px 12px;
+
+    background: #FFFFFF;
+    color: var(--color-text);
+
+    border: 1px solid #D5D5D5;
+    border-radius: 7px;
+
+    font-family: inherit;
+    font-size: 14px;
+
+    cursor: pointer;
+}
+
+.filtro select:focus {
+    outline: 2px solid var(--color-ocean-light);
+    outline-offset: 2px;
+}
+
+.filtros,
+.filtros-evolucao {
+    display: flex;
+
+    gap: 24px;
+
+    flex-wrap: wrap;
+}
+
+
+/* ==========================================
+   TABELAS - DESKTOP
+========================================== */
+
+.tabela-container,
+.table-wrapper {
+    width: 100%;
+
+    overflow-x: auto;
+
+    border: 1px solid #E0E5EA;
+    border-radius: 8px;
+}
+
+.tabela-container table,
+.table-wrapper table {
+    width: 100%;
+
+    border-collapse: collapse;
+
+    font-size: 14px;
+}
+
+.tabela-container th,
+.table-wrapper th {
+    padding: 12px 14px;
+
+    background: var(--color-table-header);
+    color: var(--color-ocean);
+
+    text-align: left;
+    font-weight: 600;
+
+    white-space: nowrap;
+}
+
+.tabela-container td,
+.table-wrapper td {
+    padding: 13px 14px;
+
+    border-top: 1px solid var(--color-border);
+
+    vertical-align: middle;
+}
+
+.tabela-container tbody tr:hover,
+.table-wrapper tbody tr:hover {
+    background: #FAFAFA;
+}
+
+
+/* ==========================================
+   MENOR / MAIOR
+========================================== */
+
+.menor-preco {
+    color: var(--color-palm);
+    font-weight: 700;
+}
+
+.maior-preco {
+    color: #C83C3C;
+    font-weight: 700;
+}
+
+
+/* ==========================================
+   GRÁFICOS
+========================================== */
+
+.grafico-container {
+    position: relative;
+
+    width: 100%;
+    height: 320px;
+
+    margin: 10px 0 24px;
+}
+
+
+/* ==========================================
+   SOBRE
+========================================== */
+
+.sobre {
+    padding: 32px 24px;
+
+    background: var(--color-sand);
+}
+
+.sobre-conteudo {
+    max-width: 900px;
+}
+
+.sobre h2 {
+    margin-bottom: 14px;
+
+    color: var(--color-ocean);
+}
+
+.sobre p {
+    margin-bottom: 12px;
+
+    color: var(--color-text);
+
+    font-size: 15px;
+}
+
+.periodo-coletas {
+    margin-top: 18px;
+}
+
+
+/* ==========================================
+   RODAPÉ
+========================================== */
+
+.footer {
+    padding: 18px 24px;
+
+    text-align: center;
+
+    font-size: 13px;
+    color: var(--color-text-muted);
+}
+
+
+/* ==========================================
+   MOBILE
+========================================== */
+
+@media (max-width: 600px) {
+
+    /* --------------------------------------
+       NAVEGAÇÃO
+    -------------------------------------- */
+
+    .nav {
+        padding: 14px 18px;
+        align-items: flex-start;
+    }
+
+    .nav-title {
+        font-size: 14px;
+    }
+
+    .nav-links {
+        width: 100%;
+
+        gap: 6px 14px;
+    }
+
+    .nav-links a {
+        padding: 7px 0;
+
+        font-size: 13px;
+    }
+
+
+    /* --------------------------------------
+       HERO
+    -------------------------------------- */
+
+    .hero {
+        padding:
+            34px 18px
+            65px;
+    }
+
+    .hero h1 {
+        max-width: 320px;
+
+        font-size: 24px;
+        line-height: 1.2;
+    }
+
+    .hero-subtitle {
+        font-size: 14px;
+    }
+
+
+    /* --------------------------------------
+       RESUMO
+    -------------------------------------- */
+
+    .resumo {
+        padding:
+            20px 18px
+            28px;
+    }
+
+    .resumo-grid {
+        grid-template-columns:
+            repeat(2, minmax(0, 1fr));
+
+        gap: 9px;
+    }
+
+    .resumo-card {
+        min-width: 0;
+
+        padding: 12px;
+    }
+
+    .resumo-card .fuel-name {
+        font-size: 11px;
+    }
+
+    .resumo-card .fuel-price {
+        font-size: 18px;
+    }
+
+
+    /* --------------------------------------
+       CONSULTAS
+    -------------------------------------- */
+
+    .consultas {
+        padding:
+            24px 14px;
+
+        gap: 20px;
+    }
+
+    .consulta-card {
+        padding: 16px;
+
+        border-radius: 10px;
+    }
+
+    .consulta-titulo {
+        margin-bottom: 18px;
+    }
+
+    .consulta-titulo h2 {
+        font-size: 17px;
+    }
+
+    .consulta-titulo p {
+        font-size: 13px;
+    }
+
+
+    /* --------------------------------------
+       FILTROS
+    -------------------------------------- */
+
+    .filtro {
+        flex-direction: column;
+
+        align-items: stretch;
+
+        gap: 7px;
+    }
+
+    .filtro select {
+        width: 100%;
+
+        min-height: 44px;
+
+        font-size: 14px;
+    }
+
+    .filtros,
+    .filtros-evolucao {
+        flex-direction: column;
+
+        gap: 0;
+    }
+
+
+    /* ======================================
+       TABELAS VIRAM CARDS
+    ====================================== */
+
+    .tabela-container,
+    .table-wrapper {
+        overflow: visible;
+
+        border: 0;
+        border-radius: 0;
+    }
+
+    .tabela-container table,
+    .table-wrapper table {
+        display: block;
+
+        width: 100%;
+    }
+
+    .tabela-container thead,
+    .table-wrapper thead {
+        display: none;
+    }
+
+    .tabela-container tbody,
+    .table-wrapper tbody {
+        display: grid;
+
+        width: 100%;
+
+        gap: 12px;
+    }
+
+    .tabela-container tr,
+    .table-wrapper tr {
+        display: grid;
+
+        width: 100%;
+
+        padding: 14px;
+
+        background: #FFFFFF;
+
+        border: 1px solid var(--color-border);
+        border-radius: 10px;
+
+        box-shadow:
+            0 2px 7px rgba(0, 0, 0, 0.035);
+    }
+
+    .tabela-container td,
+    .table-wrapper td {
+        display: grid;
+
+        grid-template-columns:
+            minmax(90px, 38%)
+            minmax(0, 62%);
+
+        align-items: start;
+
+        gap: 10px;
+
+        width: 100%;
+
+        padding: 7px 0;
+
+        border: 0;
+        border-bottom:
+            1px solid #F0F0F0;
+
+        font-size: 13px;
+
+        overflow-wrap: anywhere;
+    }
+
+    .tabela-container td:last-child,
+    .table-wrapper td:last-child {
+        border-bottom: 0;
+    }
+
+    .tabela-container td::before,
+    .table-wrapper td::before {
+        content: attr(data-label);
+
+        color: var(--color-text-muted);
+
+        font-size: 11px;
+        font-weight: 600;
+
+        text-transform: uppercase;
+        letter-spacing: 0.25px;
+    }
+
+
+    /* MENOR PREÇO */
+
+    .tabela-container td.menor-preco,
+    .table-wrapper td.menor-preco {
+        display: block;
+
+        margin:
+            -14px
+            -14px
+            8px;
+
+        padding: 11px 14px;
+
+        background: #E9F7F2;
+        color: var(--color-palm);
+
+        border: 0;
+        border-radius:
+            10px
+            10px
+            0
+            0;
+
+        font-size: 14px;
+        font-weight: 700;
+    }
+
+    .tabela-container td.menor-preco::before,
+    .table-wrapper td.menor-preco::before {
+        display: none;
+    }
+
+
+    /* MAIOR PREÇO */
+
+    .tabela-container td.maior-preco,
+    .table-wrapper td.maior-preco {
+        display: block;
+
+        margin:
+            -14px
+            -14px
+            8px;
+
+        padding: 11px 14px;
+
+        background: #FDEEEE;
+        color: #C83C3C;
+
+        border: 0;
+        border-radius:
+            10px
+            10px
+            0
+            0;
+
+        font-size: 14px;
+        font-weight: 700;
+    }
+
+    .tabela-container td.maior-preco::before,
+    .table-wrapper td.maior-preco::before {
+        display: none;
+    }
+
+
+    /* --------------------------------------
+       GRÁFICOS
+    -------------------------------------- */
+
+    .grafico-container {
+        height: 285px;
+
+        margin:
+            8px 0
+            20px;
+    }
+
+
+    /* --------------------------------------
+       SOBRE
+    -------------------------------------- */
+
+    .sobre {
+        padding: 28px 18px;
+    }
+
+    .sobre h2 {
+        font-size: 20px;
+    }
+
+    .sobre p {
+        font-size: 14px;
+    }
+
+
+    /* --------------------------------------
+       RODAPÉ
+    -------------------------------------- */
+
+    .footer {
+        padding: 16px 18px;
+
+        font-size: 12px;
+    }
+}

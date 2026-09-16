@@ -1,0 +1,499 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <title>Preços de Combustíveis — Prado/BA</title>
+
+  <link rel="stylesheet" href="css/style.css">
+</head>
+
+<body>
+
+  <!-- ==========================================
+         NAVEGAÇÃO
+    =========================================== -->
+  <nav class="nav">
+
+    <span class="nav-title">
+      Preços de combustíveis — Prado/BA
+    </span>
+
+    <div class="nav-links">
+      <a href="#inicio">Início</a>
+      <a href="#consultar">Consultar preços</a>
+      <a href="#sobre">Sobre o projeto</a>
+    </div>
+
+  </nav>
+
+
+  <!-- ==========================================
+         INÍCIO
+    =========================================== -->
+  <header class="hero" id="inicio">
+
+    <p class="hero-kicker">
+      PRADO / BA
+    </p>
+
+    <h1>
+      Preços de combustíveis em Prado
+    </h1>
+
+    <p class="hero-subtitle">
+      Consulte os preços coletados nos postos da cidade.
+    </p>
+
+    <a href="#consultar" class="btn-primary">
+      Consultar preços
+    </a>
+
+    <svg class="wave" viewBox="0 0 1200 60" preserveAspectRatio="none" aria-hidden="true">
+      <path d="
+                    M0,35
+                    C50,15 100,15 150,35
+                    C200,55 250,55 300,35
+                    C350,15 400,15 450,35
+                    C500,55 550,55 600,35
+                    C650,15 700,15 750,35
+                    C800,55 850,55 900,35
+                    C950,15 1000,15 1050,35
+                    C1100,55 1150,55 1200,35
+                    L1200,60
+                    L0,60
+                    Z
+                " fill="#F5E9D6" />
+    </svg>
+
+  </header>
+
+
+  <!-- ==========================================
+         RESUMO
+    =========================================== -->
+  <section class="resumo">
+
+    <p class="resumo-label">
+      Preço médio na coleta mais recente
+    </p>
+
+    <div class="resumo-grid" id="resumo-grid">
+      <!-- Preenchido pelo JavaScript a partir de coletas.csv -->
+    </div>
+
+  </section>
+
+
+  <!-- ==========================================
+         CONSULTAS
+    =========================================== -->
+  <section id="consultar" class="consultas">
+
+
+    <!-- ======================================
+             CONSULTA I
+             MENOR E MAIOR PREÇO
+        ======================================= -->
+    <div class="consulta-bloco consulta-card" id="menor-maior">
+
+      <div class="consulta-titulo">
+
+        <h2>
+          Menor e maior preço
+        </h2>
+
+        <p>
+          Veja qual posto oferece o menor e o maior preço
+          para o combustível selecionado.
+        </p>
+
+      </div>
+
+
+      <div class="filtro">
+
+        <label for="combustivel-minmax">
+          Combustível
+        </label>
+
+        <select id="combustivel-minmax">
+
+          <option value="Gasolina Comum">
+            Gasolina Comum
+          </option>
+
+          <option value="Gasolina Aditivada">
+            Gasolina Aditivada
+          </option>
+
+          <option value="Etanol">
+            Etanol
+          </option>
+
+          <option value="Diesel">
+            Diesel
+          </option>
+
+        </select>
+
+      </div>
+
+
+      <div class="tabela-container">
+
+        <table>
+
+          <thead>
+            <tr>
+              <th>Classificação</th>
+              <th>Posto</th>
+              <th>Endereço</th>
+              <th>Bairro</th>
+              <th>Combustível</th>
+              <th>Preço</th>
+              <th>Data</th>
+            </tr>
+          </thead>
+
+          <tbody id="tabela-minmax">
+            <!-- Preenchido pelo JavaScript -->
+          </tbody>
+
+        </table>
+
+      </div>
+
+    </div>
+
+
+    <!-- ======================================
+             CONSULTA II
+             PREÇO MÉDIO POR POSTO
+        ======================================= -->
+    <div class="consulta-bloco consulta-card" id="media-posto">
+
+      <div class="consulta-titulo">
+
+        <h2>
+          Preço médio por posto
+        </h2>
+
+        <p>
+          Compare o preço médio do combustível selecionado
+          em cada posto.
+        </p>
+
+      </div>
+
+
+      <div class="filtro">
+
+        <label for="combustivel-media">
+          Combustível
+        </label>
+
+        <select id="combustivel-media">
+
+          <option value="Gasolina Comum">
+            Gasolina Comum
+          </option>
+
+          <option value="Gasolina Aditivada">
+            Gasolina Aditivada
+          </option>
+
+          <option value="Etanol">
+            Etanol
+          </option>
+
+          <option value="Diesel">
+            Diesel
+          </option>
+
+        </select>
+
+      </div>
+
+
+      <div class="tabela-container">
+
+        <table>
+
+          <thead>
+            <tr>
+              <th>Posto</th>
+              <th>Bairro</th>
+              <th>Combustível</th>
+              <th>Preço médio</th>
+              <th>Amostras</th>
+            </tr>
+          </thead>
+
+          <tbody id="tabela-media">
+            <!-- Preenchido pelo JavaScript -->
+          </tbody>
+
+        </table>
+
+      </div>
+
+    </div>
+
+
+    <!-- ======================================
+             CONSULTA III
+             PREÇOS MAIS RECENTES
+        ======================================= -->
+    <div class="consulta-bloco consulta-card" id="recentes">
+
+      <div class="consulta-titulo">
+
+        <h2>
+          Preços mais recentes
+        </h2>
+
+        <p>
+          Consulte o último preço registrado
+          de cada combustível por posto.
+        </p>
+
+      </div>
+
+
+      <div class="filtro">
+
+        <label for="posto-recente">
+          Posto
+        </label>
+
+        <select id="posto-recente">
+
+          <option value="todos">
+            Todos os postos
+          </option>
+
+        </select>
+
+      </div>
+
+
+      <div class="tabela-container">
+
+        <table>
+
+          <thead>
+            <tr>
+              <th>Posto</th>
+              <th>Bairro</th>
+              <th>Combustível</th>
+              <th>Preço</th>
+              <th>Data</th>
+            </tr>
+          </thead>
+
+          <tbody id="tabela-recentes">
+            <!-- Preenchido pelo JavaScript -->
+          </tbody>
+
+        </table>
+
+      </div>
+
+    </div>
+
+
+    <!-- ======================================
+             CONSULTA IV
+             EVOLUÇÃO DOS PREÇOS
+        ======================================= -->
+    <div class="consulta-bloco consulta-card" id="evolucao">
+
+      <div class="consulta-titulo">
+
+        <h2>
+          Evolução dos preços
+        </h2>
+
+        <p>
+          Acompanhe a evolução do preço dos combustíveis
+          em cada posto ao longo das coletas.
+        </p>
+
+      </div>
+
+
+      <div class="filtros-evolucao">
+
+        <div class="filtro">
+
+          <label for="posto-evolucao">
+            Posto
+          </label>
+
+          <select id="posto-evolucao">
+            <!-- Preenchido pelo JavaScript -->
+          </select>
+
+        </div>
+
+
+        <div class="filtro">
+
+          <label for="combustivel-evolucao">
+            Combustível
+          </label>
+
+          <select id="combustivel-evolucao">
+
+                <option value="todos">
+                  Todos os combustíveis
+                </option>
+
+                <option value="Gasolina Comum">
+                  Gasolina Comum
+                </option>
+
+                <option value="Gasolina Aditivada">
+                  Gasolina Aditivada
+                </option>
+
+                <option value="Etanol">
+                  Etanol
+                </option>
+
+                <option value="Diesel">
+                  Diesel
+                </option>
+
+          </select>
+
+        </div>
+
+      </div>
+
+
+      <div class="grafico-container">
+
+        <canvas id="grafico-evolucao">
+        </canvas>
+
+      </div>
+
+
+      <div class="tabela-container">
+
+        <table>
+
+          <thead>
+            <tr>
+              <th>Posto</th>
+              <th>Bairro</th>
+              <th>Combustível</th>
+              <th>Preço</th>
+              <th>Data</th>
+            </tr>
+          </thead>
+
+          <tbody id="tabela-evolucao">
+            <!-- Preenchido pelo JavaScript -->
+          </tbody>
+
+        </table>
+
+      </div>
+
+    </div>
+
+
+    <!-- ======================================
+             GRÁFICO
+             PREÇO MÉDIO DOS COMBUSTÍVEIS
+        ======================================= -->
+    <div class="consulta-bloco consulta-card" id="graficos-gerais">
+
+      <div class="consulta-titulo">
+
+        <h2>
+          Evolução do preço médio dos combustíveis
+        </h2>
+
+        <p>
+          Compare a evolução do preço médio de cada combustível
+          ao longo das datas de coleta.
+        </p>
+
+      </div>
+
+
+      <div class="grafico-container">
+
+        <canvas id="grafico-media-geral">
+        </canvas>
+
+      </div>
+
+    </div>
+
+
+  </section>
+
+
+  <!-- ==========================================
+         SOBRE O PROJETO
+    =========================================== -->
+<section id="sobre" class="sobre">
+
+    <div class="container">
+
+        <div class="sobre-conteudo">
+
+            <h2>Sobre o projeto</h2>
+
+            <p>
+                Este site foi desenvolvido como parte de um projeto acadêmico
+                da disciplina de <strong>Arquitetura de Dados Relacionais I</strong>,
+                com o objetivo de organizar e divulgar informações sobre os
+                preços de combustíveis em postos de Prado - BA.
+            </p>
+
+            <p>
+                Os dados apresentados foram obtidos por meio de coletas
+                realizadas em <strong>cinco postos da cidade</strong>,
+                contemplando Gasolina Comum, Gasolina Aditivada,
+                Etanol e Diesel.
+            </p>
+
+            <p>
+                A plataforma permite consultar os menores e maiores preços,
+                comparar médias por posto, visualizar os preços mais recentes
+                e acompanhar a evolução dos valores ao longo das coletas.
+            </p>
+
+            <p class="periodo-coletas">
+                <strong>
+                    Período das coletas: 12/08/2026 a 12/09/2026 • Prado - BA
+                </strong>
+            </p>
+
+        </div>
+
+    </div>
+
+</section>
+
+  <!-- ==========================================
+         SCRIPTS
+    =========================================== -->
+
+  <!-- Biblioteca utilizada para os gráficos -->
+  <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+
+  <!-- JavaScript do projeto -->
+  <script src="js/script.js"></script>
+
+</body>
+
+</html>

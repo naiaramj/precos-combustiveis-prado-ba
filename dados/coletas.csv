@@ -1,0 +1,101 @@
+posto,bairro,logradouro,numero,combustivel,valor,data
+"Rede Dal (Posto Evangelista)","São Braz","Rua Elisio Alves de Oliveira",8-82,"Gasolina Comum",7.24,2026-08-12
+"Rede Dal (Posto Evangelista)","São Braz","Rua Elisio Alves de Oliveira",8-82,"Gasolina Aditivada",7.29,2026-08-12
+"Rede Dal (Posto Evangelista)","São Braz","Rua Elisio Alves de Oliveira",8-82,Etanol,5.09,2026-08-12
+"Rede Dal (Posto Evangelista)","São Braz","Rua Elisio Alves de Oliveira",8-82,Diesel,7.34,2026-08-12
+"Posto VIP","Cosme Damião","Avenida Itamaraju",19,"Gasolina Comum",7.09,2026-08-12
+"Posto VIP","Cosme Damião","Avenida Itamaraju",19,"Gasolina Aditivada",7.09,2026-08-12
+"Posto VIP","Cosme Damião","Avenida Itamaraju",19,Etanol,4.99,2026-08-12
+"Posto VIP","Cosme Damião","Avenida Itamaraju",19,Diesel,8.75,2026-08-12
+"Auto Posto Prado Shell","Novo Prado","Avenida Itamaraju","4, Casa 1","Gasolina Comum",7.14,2026-08-12
+"Auto Posto Prado Shell","Novo Prado","Avenida Itamaraju","4, Casa 1","Gasolina Aditivada",7.34,2026-08-12
+"Auto Posto Prado Shell","Novo Prado","Avenida Itamaraju","4, Casa 1",Etanol,4.99,2026-08-12
+"Auto Posto Prado Shell","Novo Prado","Avenida Itamaraju","4, Casa 1",Diesel,7.29,2026-08-12
+"PB Petrobahia",Centro,"Avenida Itamaraju",670,"Gasolina Comum",7.09,2026-08-12
+"PB Petrobahia",Centro,"Avenida Itamaraju",670,"Gasolina Aditivada",7.09,2026-08-12
+"PB Petrobahia",Centro,"Avenida Itamaraju",670,Etanol,4.99,2026-08-12
+"PB Petrobahia",Centro,"Avenida Itamaraju",670,Diesel,7.49,2026-08-12
+"Rede Santana","Luiz Eduardo","Avenida Itamaraju",670,"Gasolina Comum",6.99,2026-08-12
+"Rede Santana","Luiz Eduardo","Avenida Itamaraju",670,"Gasolina Aditivada",6.99,2026-08-12
+"Rede Santana","Luiz Eduardo","Avenida Itamaraju",670,Etanol,4.89,2026-08-12
+"Rede Santana","Luiz Eduardo","Avenida Itamaraju",670,Diesel,7.19,2026-08-12
+"Rede Dal (Posto Evangelista)","São Braz","Rua Elisio Alves de Oliveira",8-82,"Gasolina Comum",7.24,2026-08-20
+"Rede Dal (Posto Evangelista)","São Braz","Rua Elisio Alves de Oliveira",8-82,"Gasolina Aditivada",7.29,2026-08-20
+"Rede Dal (Posto Evangelista)","São Braz","Rua Elisio Alves de Oliveira",8-82,Etanol,5.09,2026-08-20
+"Rede Dal (Posto Evangelista)","São Braz","Rua Elisio Alves de Oliveira",8-82,Diesel,7.34,2026-08-20
+"Posto VIP","Cosme Damião","Avenida Itamaraju",19,"Gasolina Comum",7.09,2026-08-20
+"Posto VIP","Cosme Damião","Avenida Itamaraju",19,"Gasolina Aditivada",7.09,2026-08-20
+"Posto VIP","Cosme Damião","Avenida Itamaraju",19,Etanol,4.99,2026-08-20
+"Posto VIP","Cosme Damião","Avenida Itamaraju",19,Diesel,8.75,2026-08-20
+"Auto Posto Prado Shell","Novo Prado","Avenida Itamaraju","4, Casa 1","Gasolina Comum",7.14,2026-08-20
+"Auto Posto Prado Shell","Novo Prado","Avenida Itamaraju","4, Casa 1","Gasolina Aditivada",7.34,2026-08-20
+"Auto Posto Prado Shell","Novo Prado","Avenida Itamaraju","4, Casa 1",Etanol,4.99,2026-08-20
+"Auto Posto Prado Shell","Novo Prado","Avenida Itamaraju","4, Casa 1",Diesel,7.29,2026-08-20
+"PB Petrobahia",Centro,"Avenida Itamaraju",670,"Gasolina Comum",7.09,2026-08-20
+"PB Petrobahia",Centro,"Avenida Itamaraju",670,"Gasolina Aditivada",7.09,2026-08-20
+"PB Petrobahia",Centro,"Avenida Itamaraju",670,Etanol,4.99,2026-08-20
+"PB Petrobahia",Centro,"Avenida Itamaraju",670,Diesel,7.49,2026-08-20
+"Rede Santana","Luiz Eduardo","Avenida Itamaraju",670,"Gasolina Comum",6.99,2026-08-20
+"Rede Santana","Luiz Eduardo","Avenida Itamaraju",670,"Gasolina Aditivada",6.99,2026-08-20
+"Rede Santana","Luiz Eduardo","Avenida Itamaraju",670,Etanol,4.89,2026-08-20
+"Rede Santana","Luiz Eduardo","Avenida Itamaraju",670,Diesel,7.19,2026-08-20
+"Rede Dal (Posto Evangelista)","São Braz","Rua Elisio Alves de Oliveira",8-82,"Gasolina Comum",7.24,2026-08-28
+"Rede Dal (Posto Evangelista)","São Braz","Rua Elisio Alves de Oliveira",8-82,"Gasolina Aditivada",7.29,2026-08-28
+"Rede Dal (Posto Evangelista)","São Braz","Rua Elisio Alves de Oliveira",8-82,Etanol,5.09,2026-08-28
+"Rede Dal (Posto Evangelista)","São Braz","Rua Elisio Alves de Oliveira",8-82,Diesel,7.34,2026-08-28
+"Posto VIP","Cosme Damião","Avenida Itamaraju",19,"Gasolina Comum",7.09,2026-08-28
+"Posto VIP","Cosme Damião","Avenida Itamaraju",19,"Gasolina Aditivada",7.09,2026-08-28
+"Posto VIP","Cosme Damião","Avenida Itamaraju",19,Etanol,4.99,2026-08-28
+"Posto VIP","Cosme Damião","Avenida Itamaraju",19,Diesel,8.75,2026-08-28
+"Auto Posto Prado Shell","Novo Prado","Avenida Itamaraju","4, Casa 1","Gasolina Comum",7.14,2026-08-28
+"Auto Posto Prado Shell","Novo Prado","Avenida Itamaraju","4, Casa 1","Gasolina Aditivada",7.34,2026-08-28
+"Auto Posto Prado Shell","Novo Prado","Avenida Itamaraju","4, Casa 1",Etanol,4.99,2026-08-28
+"Auto Posto Prado Shell","Novo Prado","Avenida Itamaraju","4, Casa 1",Diesel,7.29,2026-08-28
+"PB Petrobahia",Centro,"Avenida Itamaraju",670,"Gasolina Comum",7.09,2026-08-28
+"PB Petrobahia",Centro,"Avenida Itamaraju",670,"Gasolina Aditivada",7.09,2026-08-28
+"PB Petrobahia",Centro,"Avenida Itamaraju",670,Etanol,4.99,2026-08-28
+"PB Petrobahia",Centro,"Avenida Itamaraju",670,Diesel,7.49,2026-08-28
+"Rede Santana","Luiz Eduardo","Avenida Itamaraju",670,"Gasolina Comum",6.99,2026-08-28
+"Rede Santana","Luiz Eduardo","Avenida Itamaraju",670,"Gasolina Aditivada",6.99,2026-08-28
+"Rede Santana","Luiz Eduardo","Avenida Itamaraju",670,Etanol,4.89,2026-08-28
+"Rede Santana","Luiz Eduardo","Avenida Itamaraju",670,Diesel,7.19,2026-08-28
+"Rede Dal (Posto Evangelista)","São Braz","Rua Elisio Alves de Oliveira",8-82,"Gasolina Comum",7.24,2026-09-05
+"Rede Dal (Posto Evangelista)","São Braz","Rua Elisio Alves de Oliveira",8-82,"Gasolina Aditivada",7.29,2026-09-05
+"Rede Dal (Posto Evangelista)","São Braz","Rua Elisio Alves de Oliveira",8-82,Etanol,5.09,2026-09-05
+"Rede Dal (Posto Evangelista)","São Braz","Rua Elisio Alves de Oliveira",8-82,Diesel,7.34,2026-09-05
+"Posto VIP","Cosme Damião","Avenida Itamaraju",19,"Gasolina Comum",7.09,2026-09-05
+"Posto VIP","Cosme Damião","Avenida Itamaraju",19,"Gasolina Aditivada",7.09,2026-09-05
+"Posto VIP","Cosme Damião","Avenida Itamaraju",19,Etanol,4.99,2026-09-05
+"Posto VIP","Cosme Damião","Avenida Itamaraju",19,Diesel,8.75,2026-09-05
+"Auto Posto Prado Shell","Novo Prado","Avenida Itamaraju","4, Casa 1","Gasolina Comum",7.14,2026-09-05
+"Auto Posto Prado Shell","Novo Prado","Avenida Itamaraju","4, Casa 1","Gasolina Aditivada",7.34,2026-09-05
+"Auto Posto Prado Shell","Novo Prado","Avenida Itamaraju","4, Casa 1",Etanol,4.99,2026-09-05
+"Auto Posto Prado Shell","Novo Prado","Avenida Itamaraju","4, Casa 1",Diesel,7.29,2026-09-05
+"PB Petrobahia",Centro,"Avenida Itamaraju",670,"Gasolina Comum",7.09,2026-09-05
+"PB Petrobahia",Centro,"Avenida Itamaraju",670,"Gasolina Aditivada",7.09,2026-09-05
+"PB Petrobahia",Centro,"Avenida Itamaraju",670,Etanol,4.99,2026-09-05
+"PB Petrobahia",Centro,"Avenida Itamaraju",670,Diesel,7.49,2026-09-05
+"Rede Santana","Luiz Eduardo","Avenida Itamaraju",670,"Gasolina Comum",6.99,2026-09-05
+"Rede Santana","Luiz Eduardo","Avenida Itamaraju",670,"Gasolina Aditivada",6.99,2026-09-05
+"Rede Santana","Luiz Eduardo","Avenida Itamaraju",670,Etanol,4.89,2026-09-05
+"Rede Santana","Luiz Eduardo","Avenida Itamaraju",670,Diesel,7.19,2026-09-05
+"Rede Dal (Posto Evangelista)","São Braz","Rua Elisio Alves de Oliveira",8-82,"Gasolina Comum",7.24,2026-09-12
+"Rede Dal (Posto Evangelista)","São Braz","Rua Elisio Alves de Oliveira",8-82,"Gasolina Aditivada",7.29,2026-09-12
+"Rede Dal (Posto Evangelista)","São Braz","Rua Elisio Alves de Oliveira",8-82,Etanol,5.09,2026-09-12
+"Rede Dal (Posto Evangelista)","São Braz","Rua Elisio Alves de Oliveira",8-82,Diesel,7.34,2026-09-12
+"Posto VIP","Cosme Damião","Avenida Itamaraju",19,"Gasolina Comum",7.09,2026-09-12
+"Posto VIP","Cosme Damião","Avenida Itamaraju",19,"Gasolina Aditivada",7.09,2026-09-12
+"Posto VIP","Cosme Damião","Avenida Itamaraju",19,Etanol,4.99,2026-09-12
+"Posto VIP","Cosme Damião","Avenida Itamaraju",19,Diesel,8.75,2026-09-12
+"Auto Posto Prado Shell","Novo Prado","Avenida Itamaraju","4, Casa 1","Gasolina Comum",7.14,2026-09-12
+"Auto Posto Prado Shell","Novo Prado","Avenida Itamaraju","4, Casa 1","Gasolina Aditivada",7.34,2026-09-12
+"Auto Posto Prado Shell","Novo Prado","Avenida Itamaraju","4, Casa 1",Etanol,4.99,2026-09-12
+"Auto Posto Prado Shell","Novo Prado","Avenida Itamaraju","4, Casa 1",Diesel,7.29,2026-09-12
+"PB Petrobahia",Centro,"Avenida Itamaraju",670,"Gasolina Comum",7.09,2026-09-12
+"PB Petrobahia",Centro,"Avenida Itamaraju",670,"Gasolina Aditivada",7.09,2026-09-12
+"PB Petrobahia",Centro,"Avenida Itamaraju",670,Etanol,4.99,2026-09-12
+"PB Petrobahia",Centro,"Avenida Itamaraju",670,Diesel,7.49,2026-09-12
+"Rede Santana","Luiz Eduardo","Avenida Itamaraju",670,"Gasolina Comum",6.99,2026-09-12
+"Rede Santana","Luiz Eduardo","Avenida Itamaraju",670,"Gasolina Aditivada",6.99,2026-09-12
+"Rede Santana","Luiz Eduardo","Avenida Itamaraju",670,Etanol,4.89,2026-09-12
+"Rede Santana","Luiz Eduardo","Avenida Itamaraju",670,Diesel,7.19,2026-09-12
