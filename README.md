@@ -1,8 +1,8 @@
 # Preços de Combustíveis — Prado/BA
 
-Projeto acadêmico desenvolvido para a disciplina de **Arquitetura de Dados Relacionais I**, com o objetivo de organizar, consultar e divulgar informações sobre os preços de combustíveis em postos de Prado, Bahia.
+Projeto acadêmico desenvolvido para a disciplina de **Arquitetura de Dados Relacionais I**, com o objetivo de aplicar, na prática, os conceitos estudados sobre modelagem e implementação de bancos de dados relacionais.
 
-O projeto contempla desde a modelagem e implementação de um banco de dados relacional até o desenvolvimento de uma interface web para disponibilização das informações à comunidade.
+A atividade propõe a construção de um banco de dados a partir de informações sobre preços de combustíveis em postos da região do aluno. Neste projeto, foram utilizados dados coletados em postos de **Prado - BA**, contemplando as etapas de modelagem conceitual e lógica, implementação física do banco de dados, consultas SQL e divulgação dos resultados por meio de uma aplicação web.
 
 ## Sobre o projeto
 
